@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+    
+
+}
+
+header div {
+    margin: 8% 10% 5% 10%;
+    height: 300px;
+    background-image: url("./assets/design1_image1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+h1 {
+    position: absolute;
+    top: -90px;
+    left: 0;
+    font-size: 75px;
+    
+}
+
+nav {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    margin: 0 3px;
+}
+
+nav a {
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 1px 18px;
+    font-size: 25px;
+    background-color: #4472c4;
+    color: white;
+    margin: 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+nav a:first-child {
+    background-color: #70ad47;
+}
+
+nav a:hover {
+    background-color: #48b39b; 
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6); 
+}
+
+
+h2 {
+    position: relative;
+    top: 100%; 
+    font-size: 40px;
+    text-align: center;
+    border: 2px solid black;
+    border-top: none;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    padding: 0% 10%;
+    
+}
+
+.event-logo {
+    margin-right: 20px;
+}
+
+.event-logo img {
+    width: 250px;
+    height: 250px;
+    padding-bottom: 10px;
+}
+
+
+h3{
+    padding-left: 10%;
+    font-size: 30px;
+}
+
+p{
+    padding-left: 12%;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.text-email {
+    
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+
+
