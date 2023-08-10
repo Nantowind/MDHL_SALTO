@@ -5,11 +5,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Comic Neue', cursive;
+    background-color: black;
     
-
 }
 
-header div {
+.header-image div {
     margin: 8% 10% 5% 10%;
     height: 300px;
     background-image: url("./assets/design1_image1.jpg");
@@ -19,40 +19,16 @@ header div {
     
 }
 
-h1 {
+.title-section {
+    display: inline;
     position: absolute;
     top: -90px;
     left: 0;
-    font-size: 75px;
+    font-size: 4.5em;
     
 }
 
-nav {
-    position: absolute;
-    top: -20px;
-    right: 0;
-    margin: 0 3px;
-}
 
-nav a {
-    text-decoration: none;
-    border: 2px solid black;
-    padding: 1px 18px;
-    font-size: 25px;
-    background-color: #4472c4;
-    color: white;
-    margin: 5px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-nav a:first-child {
-    background-color: #70ad47;
-}
-
-nav a:hover {
-    background-color: #48b39b; 
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6); 
-}
 
 
 h2 {
@@ -60,7 +36,6 @@ h2 {
     top: 100%; 
     font-size: 40px;
     text-align: center;
-    border: 2px solid black;
     border-top: none;
 }
 
@@ -102,3 +77,178 @@ p{
 
 
 
+
+.fall-div {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    flex-direction: column;
+    width: 900px;
+    height: 100px;
+    color: white;
+    background-color: #2f3131;
+}
+
+.fall-div h3 {
+    font-size: 30px;
+    padding-left: 0px;
+    margin-bottom: 10px; 
+    background-color: #2f3131;
+    font-size: 1.9em;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    background-color: #2f3131;
+    font-size: 1.5em;
+
+}
+
+
+
+.star-item{
+    text-decoration: underline;
+    background-color: #2f3131;
+}
+.star-item::marker{
+    content: "🌟"; 
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.table-section{
+    background-color: #2f3131;
+}
+
+.table-article{
+    display: flex;
+    justify-content: center;
+    background-color: #2f3131;
+}
+
+table{
+    width: 70%;
+    height: 600px;
+    text-align: center;
+    border: 2px solid #167F92;
+    background-color: white;
+}
+table th {
+    background-color: #167F92;
+    color: white;
+}
+th, td{
+    border: 2px solid #167F92;
+    background-color: rgb(209, 206, 206);
+}
+
+
+.image-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%; 
+    padding: 20px; background-color:#2f3131;
+}
+
+.image-logo img {
+    max-width: 100%; 
+    height: auto;
+    background-color:#2f3131;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    height: 10%;
+    width: 100%;
+}
+.h1-title{
+    color: white;
+    display: inline;
+    font-size: 3em;
+}
+
+.nav{
+    display: flex;
+    position: relative;
+    display: inline;
+    right: 0;
+    margin: 0 3px;
+    height: 100%;
+}
+
+
+.nav a {
+    text-decoration: none;
+    border: 2px solid #2f3131;
+    padding: 1px 18px;
+    font-size: 25px;
+    color: white;
+    margin: 5px;
+    box-shadow: 4px 4px 8px rgba(65, 64, 64, 0.8);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav a:hover {
+    border-top:3px solid red;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 6px 6px 12px rgba(48, 46, 46, 0.6); 
+}
+
+.banner-section{
+        width: 100%;
+        height: 300px;
+        background-image: url("./assets/design1_image1.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+}
+
+.page-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.page-title::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: left;
+    animation: shine 1s linear;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-50%) scaleX(0);
+    }
+    100% {
+        transform: translateX(50%) scaleX(1);
+    }
+}
