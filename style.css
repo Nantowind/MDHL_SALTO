@@ -61,10 +61,6 @@
   border-radius: 50%;
 }
 
-
-
-
-
 .box-div-info {
   display: flex;
   flex-direction: column;
@@ -73,13 +69,11 @@
   margin-top: 0.05em;
 }
 
-
 .div-info {
   box-shadow: 2px 2px 5px rgba(65, 82, 83, 0.3);
   transition: box-shadow 0.3s ease-in-out;
   margin: 0px;
 }
-
 
 .div-info:hover {
   box-shadow: 5px 5px 10px rgba(223, 248, 110, 0.87);
@@ -113,9 +107,6 @@
   border-top-right-radius: 0px;
 }
 
-
-
-
 .box-div-about {
   display: flex;
   flex-direction: column;
@@ -124,12 +115,10 @@
   margin-top: 0.2em;
 }
 
-
 .div-about {
   transition: box-shadow 0.3s ease-in-out;
   margin: 0px;
 }
-
 
 .div-about:hover {
   transform: scale(1.03);
@@ -152,7 +141,7 @@
 
 .div-about p {
   padding-left: 12%;
-  
+
   font-size: 23px;
   margin-bottom: 10px;
   border-width: 0.2em 0.05em;
@@ -165,8 +154,6 @@
   border-top-right-radius: 0px;
 }
 
-
-
 .box-div-contact {
   display: flex;
   flex-direction: column;
@@ -175,14 +162,13 @@
   margin-top: 0.2em;
 }
 
-
 .div-contact {
   box-shadow: 2px 2px 5px rgba(105, 109, 99, 0);
   transition: box-shadow 0.3s ease-in-out;
   margin: 0px;
 }
 
-h3{
+h3 {
   margin: 0;
 }
 .div-contact:hover {
@@ -207,7 +193,7 @@ h3{
 
 .div-contact p {
   padding-left: 12%;
-  
+
   font-size: 23px;
   margin-bottom: 10px;
   border-width: 0.2em 0.05em;
@@ -219,8 +205,6 @@ h3{
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-
-
 
 .text-email {
   display: inline-block;
@@ -290,6 +274,11 @@ td {
   border: 2px solid #167f92;
   background-color: rgb(209, 206, 206);
 }
+.table-ubication{
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
 
 .image-logo {
   display: flex;
@@ -357,6 +346,7 @@ nav a:hover {
 }
 
 .page-title {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -365,6 +355,7 @@ nav a:hover {
   color: white;
   position: relative;
   overflow: hidden;
+
 }
 
 .page-title::before {
@@ -410,7 +401,6 @@ nav a:hover {
   display: inline;
 }
 
-
 .highlight {
   font-weight: bold;
   color: rgb(25, 138, 158);
@@ -419,44 +409,235 @@ nav a:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-  
 }
 
 .contact-info * {
   margin: 5px 0;
 }
-.email{
+.email {
   align-self: flex-end;
 }
 
-.main-rules{
+.main-rules {
   padding: 0px 5%;
   background-color: #2f3131;
-
 }
-.main-rules *{
+.main-rules * {
   background-color: #2f3131;
   color: white;
-  
 }
 
-
-
-.main-rules>ol{
-  list-style-type:decimal;
-  list-style-position:unset;
-  
+.main-rules > ol {
+  list-style-type: decimal;
+  list-style-position: unset;
 }
-ol>li{
-  
+ol > li {
   margin: 20px 0px;
 }
 
-.all-play{
-
+.all-play {
   margin-top: 10px;
 }
 
 .circle-item::marker {
   content: "°";
+}
+
+.body-form * {
+  background-color: white;
+}
+
+.registration-form {
+  background-color: #2f3131;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  height: 1200px;
+}
+.registration-form *{
+  background-color:  #D1CECE;
+}
+
+.registration-form h2 {
+  font-size: 2.3rem;
+}
+.registration-form>h3 {
+  font-size: 1.7rem;
+  border: 0.3rem solid #167f92;
+  
+}
+
+
+.player-information {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+  border: 0.3rem solid #167f92;
+  box-sizing: border-box;
+  height: 27;
+  
+}
+
+.registration-form legend {
+  font-size: 1.5rem;
+  border: 0.3rem solid #167f92;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.player-information .label-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.player-information label {
+  width: 48%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.player-information input[type="text"],
+.player-information input[type="number"] {
+  width: 100%;
+  height: 60%;
+  max-width: 100%;
+  max-height: 60%;
+  box-sizing: border-box;
+}
+
+.player-information input[type="radio"] {
+  width: auto;
+}
+
+.radio-div {
+  display: flex;
+}
+
+#gender {
+  width: 25%;
+  border: 0.3rem solid #167f92;
+  border-bottom: none;
+}
+
+#education {
+  width: 75%;
+  border: 0.3rem solid #167f92;
+  border-bottom: none;
+}
+
+.options-school {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin: 0 5%;
+  border: 0.2rem solid #167f92;
+  box-sizing: border-box;
+  height: 10%;
+}
+
+.options-school label {
+  font-size: 1.1em;
+  width: 24%;
+  margin: 1%;
+  text-align: center;
+}
+
+.player-posicions {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 5%;
+  border: 0.2rem solid #167f92;
+  box-sizing: border-box;
+  height: 8%;
+}
+
+.player-posicions label {
+  font-size: 1.1em;
+  width: 23%;
+  margin: 1%;
+  text-align: center;
+}
+.uniform-size {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 5%;
+  border: 0.2rem solid #167f92;
+  box-sizing: border-box;
+  height: 10%;
+}
+
+.uniform-size label {
+  font-size: 1.1em;
+  width: 23%;
+  margin: 1%;
+  text-align: center;
+}
+
+.custom-permission-play {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 5%;
+  border: 0.2rem solid #167f92;
+  box-sizing: border-box;
+  height: 23%;
+}
+
+.custom-permission-play h3 {
+  width: 50%;
+  margin-left: 1%;
+}
+
+.custom-permission-play p {
+  margin: 2%;
+  width: 90%;
+  font-size: 1.2rem;
+}
+
+.custom-permission-play div {
+  width: 50%;
+  font-size: 1.2rem;
+  color: #167f92;
+  margin-left: 1%;
+}
+
+.button {
+  width: 20%;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  font-size: 1.5rem;
+}
+.button:hover {
+  transform: scale(1.05);
+  background-color: #0056b3;
+}
+iframe{
+  width: 20%;
+  height: 20%;
 }
